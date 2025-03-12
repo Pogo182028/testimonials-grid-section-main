@@ -1,6 +1,7 @@
 :root {
   --font-BarlowSemiCondensed: "Barlow Semi Condensed", sans-serif;
-  --font-size: 1.3rem;
+  --font-size: 1.4rem;
+  /* Weights: 500, 600 */
 
   /* Primary */
   --Purple-50: hsl(260, 100%, 95%);
@@ -16,6 +17,8 @@
   --Dark-blue: hsl(219, 29%, 14%);
   --Black: hsl(0, 0%, 7%);
 }
+
+/* Global styles */
 
 html {
   font-size: 62.5%; /* 1rem = 10px */
@@ -50,12 +53,12 @@ img {
 
 .container {
   max-width: min(85%, 144rem);
-  margin: 6rem auto;
+  margin: 7rem auto;
 }
 
 .grid {
   display: grid;
-  gap: 3rem;
+  gap: 3.5rem;
 }
 
 .flex {
@@ -64,24 +67,110 @@ img {
   gap: 1.5rem;
 }
 
+/* article styles */
+
 article {
   padding: 3rem;
   border-radius: 1rem;
 }
 
+article > div > div > p {
+  font-size: 1.2rem;
+}
+
+article > div {
+  margin-bottom: 2rem;
+}
+
+article > p:nth-child(2) {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+/* testimonial Daniel Clifford */
+
 .testimonial-daniel {
   background-color: var(--Purple-500);
+  color: var(--White);
 }
+
+.testimonial-daniel img {
+  border: 0.2rem solid var(--Purple-300);
+}
+
+.testimonial-daniel h2 {
+  font-weight: 400;
+}
+
+.testimonial-daniel div > div > p {
+  color: var(--Purple-50);
+}
+
+.testimonial-daniel p:nth-child(3) {
+  color: var(--Grey-200);
+}
+
+/* testimonial Jonathan Walters */
 
 .testimonial-jonathan {
-  background-color: var(--Grey-400);
+  background-color: var(--Grey-500);
+  color: var(--Grey-200);
 }
 
-.testimonial-jeanette,
-.testimonial-kira {
-  background-color: var(--White);
+.testimonial-jonathan img {
+  border: 0.2rem solid var(--Grey-400);
 }
+
+.testimonial-jonathan h2 {
+  font-weight: 500;
+}
+
+.testimonial-jonathan p:nth-child(2) {
+  color: var(--Grey-100);
+}
+
+/* Testimonial Jeanette Harmon */
+
+.testimonial-jeanette {
+  background-color: var(--White);
+  color: var(--Grey-400);
+}
+
+.testimonial-jeanette img {
+  border: 0.2rem solid var(--Grey-200);
+}
+
+.testimonial-jeanette h2 {
+  font-weight: 500;
+}
+
+/* Testimonial Patrick Abrams */
 
 .testimonial-patrick {
   background-color: var(--Dark-blue);
+  color: var(--Grey-200);
+}
+
+.testimonial-patrick img {
+  border: 0.2rem solid var(--Purple-500);
+}
+
+.testimonial-patrick h2 {
+  font-weight: 500;
+}
+
+/* Testimonial Kira Whittle */
+
+.testimonial-kira {
+  background-color: var(--White);
+  color: var(--Grey-400);
+}
+
+.testimonial-kira img {
+  border: 0.2rem solid var(--Grey-200);
+}
+
+.testimonial-kira h2 {
+  font-weight: 500;
 }
