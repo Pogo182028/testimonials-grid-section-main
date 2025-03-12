@@ -1,0 +1,87 @@
+:root {
+  --font-BarlowSemiCondensed: "Barlow Semi Condensed", sans-serif;
+  --font-size: 1.3rem;
+
+  /* Primary */
+  --Purple-50: hsl(260, 100%, 95%);
+  --Purple-300: hsl(264, 82%, 80%);
+  --Purple-500: hsl(263, 55%, 52%);
+
+  /* Neutral */
+  --White: hsl(0, 0%, 100%);
+  --Grey-100: hsl(214, 17%, 92%);
+  --Grey-200: hsl(0, 0%, 81%);
+  --Grey-400: hsl(224, 10%, 45%);
+  --Grey-500: hsl(217, 19%, 35%);
+  --Dark-blue: hsl(219, 29%, 14%);
+  --Black: hsl(0, 0%, 7%);
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--font-BarlowSemiCondensed);
+  font-size: var(--font-size);
+  background-color: var(--Grey-100);
+}
+
+h1,
+h2 {
+  font-size: var(--font-size);
+}
+
+img {
+  width: 3.5rem;
+  height: auto;
+  display: block;
+  border-radius: 50%;
+}
+
+.container {
+  max-width: min(85%, 144rem);
+  margin: 6rem auto;
+}
+
+.grid {
+  display: grid;
+  gap: 3rem;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+article {
+  padding: 3rem;
+  border-radius: 1rem;
+}
+
+.testimonial-daniel {
+  background-color: var(--Purple-500);
+}
+
+.testimonial-jonathan {
+  background-color: var(--Grey-400);
+}
+
+.testimonial-jeanette,
+.testimonial-kira {
+  background-color: var(--White);
+}
+
+.testimonial-patrick {
+  background-color: var(--Dark-blue);
+}
