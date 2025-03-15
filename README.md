@@ -43,7 +43,7 @@ Users should be able to:
 
 ### What I learned
 
-
+I've been able to review about BentoGrids which are a beautiful style in things like this.
 
 ## Author
 
