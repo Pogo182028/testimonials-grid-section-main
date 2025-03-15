@@ -185,6 +185,33 @@ body {
   font-size: 1.4rem;
 }
 
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .testimonial-daniel {
+    grid-column: 1 / span 2;
+  }
+
+  .testimonial-kira {
+    grid-column: 2;
+    grid-row: 2 / span 2;
+  }
+
+  article > p:nth-child(3) {
+    font-size: 1.5rem;
+  }
+
+  .testimonial-patrick {
+    grid-column: 1 / span 2;
+  }
+
+  br {
+    display: none;
+  }
+}
+
 @media (min-width: 1280px) {
   .container {
     margin: 0 auto;
@@ -194,14 +221,6 @@ body {
     grid-template-columns: repeat(4, 1fr);
     place-content: center;
     height: 100vh;
-  }
-
-  article > p:nth-child(2) {
-    font-size: 1.8rem;
-  }
-
-  article > p:nth-child(3) {
-    font-size: 1.3rem;
   }
 
   .testimonial-daniel {
