@@ -1,14 +1,14 @@
 :root {
   --font-BarlowSemiCondensed: "Barlow Semi Condensed", sans-serif;
   --font-size: 1.4rem;
-  /* Weights: 500, 600 */
+  /*! Weights: 500, 600 */
 
-  /* Primary */
+  /*! Primary */
   --Purple-50: hsl(260, 100%, 95%);
   --Purple-300: hsl(264, 82%, 80%);
   --Purple-500: hsl(263, 55%, 52%);
 
-  /* Neutral */
+  /*! Neutral */
   --White: hsl(0, 0%, 100%);
   --Grey-100: hsl(214, 17%, 92%);
   --Grey-200: hsl(0, 0%, 81%);
@@ -18,7 +18,7 @@
   --Black: hsl(0, 0%, 7%);
 }
 
-/* Global styles */
+/*! Global styles */
 
 html {
   font-size: 62.5%; /* 1rem = 10px */
@@ -44,6 +44,10 @@ h2 {
   font-size: var(--font-size);
 }
 
+p {
+  line-height: 1.4;
+}
+
 img {
   width: 3.5rem;
   height: auto;
@@ -67,7 +71,7 @@ img {
   gap: 1.5rem;
 }
 
-/* article styles */
+/*! article styles */
 
 article {
   padding: 3rem;
@@ -88,7 +92,7 @@ article > p:nth-child(2) {
   margin-bottom: 2rem;
 }
 
-/* testimonial Daniel Clifford */
+/*! testimonial Daniel Clifford */
 
 .testimonial-daniel {
   background-color: var(--Purple-500);
@@ -111,7 +115,7 @@ article > p:nth-child(2) {
   color: var(--Grey-200);
 }
 
-/* testimonial Jonathan Walters */
+/*! testimonial Jonathan Walters */
 
 .testimonial-jonathan {
   background-color: var(--Grey-500);
@@ -130,7 +134,7 @@ article > p:nth-child(2) {
   color: var(--Grey-100);
 }
 
-/* Testimonial Jeanette Harmon */
+/*! Testimonial Jeanette Harmon */
 
 .testimonial-jeanette {
   background-color: var(--White);
@@ -145,7 +149,7 @@ article > p:nth-child(2) {
   font-weight: 500;
 }
 
-/* Testimonial Patrick Abrams */
+/*! Testimonial Patrick Abrams */
 
 .testimonial-patrick {
   background-color: var(--Dark-blue);
@@ -160,7 +164,7 @@ article > p:nth-child(2) {
   font-weight: 500;
 }
 
-/* Testimonial Kira Whittle */
+/*! Testimonial Kira Whittle */
 
 .testimonial-kira {
   background-color: var(--White);
@@ -173,4 +177,51 @@ article > p:nth-child(2) {
 
 .testimonial-kira h2 {
   font-weight: 500;
+}
+
+/*! Media Queries */
+
+body {
+  font-size: 1.4rem;
+}
+
+@media (min-width: 1280px) {
+  .container {
+    margin: 0 auto;
+  }
+
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+    place-content: center;
+    height: 100vh;
+  }
+
+  article > p:nth-child(2) {
+    font-size: 1.8rem;
+  }
+
+  article > p:nth-child(3) {
+    font-size: 1.3rem;
+  }
+
+  .testimonial-daniel {
+    grid-column: 1 / span 2;
+    background-image: url(../images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position-x: 85%;
+  }
+
+  .testimonial-kira {
+    grid-column: 4;
+    grid-row: 1 / span 2;
+  }
+
+  .testimonial-patrick {
+    grid-column: 2 / span 2;
+    grid-row: 2;
+  }
+
+  br {
+    display: none;
+  }
 }
