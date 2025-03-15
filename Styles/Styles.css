@@ -103,7 +103,7 @@ article > p:nth-child(2) {
   border: 0.2rem solid var(--Purple-300);
 }
 
-.testimonial-daniel h2 {
+.testimonial-daniel h1 {
   font-weight: 400;
 }
 
